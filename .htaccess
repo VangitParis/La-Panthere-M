@@ -20,8 +20,12 @@ Header set Cache-Control "max-age=7200, public"
 <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
 Header unset Cache-Control
 </FilesMatch>
+
+
 </IfModule>
 # END Cache-Control Headers
+
+
 
 # BEGIN Expires Headers
 <IfModule mod_expires.c>
@@ -82,5 +86,5 @@ Header unset Cache-Control
   AddOutputFilterByType DEFLATE text/plain
   AddOutputFilterByType DEFLATE text/xml
 
-  
+
 </IfModule>
